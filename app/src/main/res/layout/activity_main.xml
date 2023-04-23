@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.veertrip.android.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.veertrip.android.utils.AdvancedWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <View
+            android:id="@+id/white_bg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#fff"/>
+
+        <ImageView
+            android:id="@+id/image_bg"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/splash_background"/>
+
+        <ImageView
+            android:id="@+id/image_bg_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/splash" />
+
+        <RelativeLayout
+            android:id="@+id/splash"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:id="@+id/promotion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Now, Book Flights with"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:textColor="#fff"
+                    android:layout_marginTop="5sp"
+                    android:textAlignment="center"
+                    android:text="Zero Convenience Fee"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_border"
+                    android:textSize="14sp"
+                    android:paddingTop="8sp"
+                    android:paddingBottom="8sp"
+                    android:paddingLeft="16sp"
+                    android:paddingRight="16sp"
+                    android:textColor="#333"
+                    android:layout_marginTop="20sp"
+                    android:textAlignment="center"
+                    android:text="File CA Assisted Income Tax Returns @ ₹ 249"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/handcrafted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Handcrafted in "/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/india"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/splash_frame"
+                android:paddingTop="2000dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:src="@drawable/icon"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:paddingTop="16dp"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Veertrip"/>
+
+                <TextView
+                    android:id="@+id/tagline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:textAlignment="center"
+                    android:text="Travel Planner For Indian Armed Forces"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

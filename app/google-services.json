@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "918002965752",
+    "firebase_url": "https://natural-stacker-212603.firebaseio.com",
+    "project_id": "natural-stacker-212603",
+    "storage_bucket": "natural-stacker-212603.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918002965752:android:3b831d3a63bcdfe6",
+        "android_client_info": {
+          "package_name": "com.veertrip.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918002965752-k4jntm760cu3mfr5kbmul2bpg6ust15d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veertrip.android",
+            "certificate_hash": "e6dad734e866304b12cbe66d4fc39feb255ea8fb"
+          }
+        },
+        {
+          "client_id": "918002965752-8p6ddnl78raqcmou9la3r27b2a3knol4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-oH3NpOFl3WtpGyTxP29OQNiodUCvt-M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918002965752-8p6ddnl78raqcmou9la3r27b2a3knol4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

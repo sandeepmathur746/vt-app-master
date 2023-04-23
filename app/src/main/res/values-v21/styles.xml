@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogCustom">
+        <item name="android:colorPrimary">#00FF00</item>
+    </style>
+
+<!--    <style name="customStyle">-->
+<!--        <item name="android:textColor">#67ee44</item>-->
+<!--    </style>-->
+
+<!--    <style name="Theme.Freshchat.SelectedTheme" parent="@style/Theme.Freshchat.Light">-->
+<!--        <item name="freshchatChannelNameTextStyle">@style/customStyle</item>-->
+<!--    </style>-->
+
+</resources>
