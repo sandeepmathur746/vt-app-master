@@ -522,9 +522,9 @@ public class AdvancedWebView extends WebView {
                         return true;
                     }
                 }
-
-                // route the request through the custom URL loading method
-                view.loadUrl(url);
+                
+                    // route the request through the custom URL loading method
+                    view.loadUrl(url);
 
                 // cancel the original request
                 return true;

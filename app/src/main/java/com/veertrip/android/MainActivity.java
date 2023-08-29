@@ -183,11 +183,11 @@ public class MainActivity extends AppCompatActivity implements
         myWebView.loadUrl("https://www.veertrip.com/?is_app=true");
         //myWebView.loadUrl("http://192.168.0.100:8000");
 
-        FreshchatConfig freshchatConfig=new FreshchatConfig(
+        /*FreshchatConfig freshchatConfig=new FreshchatConfig(
                 "8541f58e-8746-49d5-9bbe-e718f44c82e5",
                 "d1b139c4-854a-4e18-a38e-89067e9f46bb"
         );
-        Freshchat.getInstance(getApplicationContext()).init(freshchatConfig);
+        Freshchat.getInstance(getApplicationContext()).init(freshchatConfig);*/
     }
 
     private void clearSplash() {
@@ -519,7 +519,12 @@ public class MainActivity extends AppCompatActivity implements
         if (url.contains("facebook.com") || url.contains("cashfree.com") || url.contains("accounts.google.com")) {
             myWebView.loadUrl(url);
 
-        } else {
+        }
+        else if (url.contains("pay")) {
+            Uri uri = Uri.parse(url);
+            Intent upiIntent = new Intent(Intent.ACTION_VIEW, uri);
+            myWebView.getContext().startActivity(upiIntent);
+        }else {
             // Load all other urls inside due to a bug in payment
             myWebView.loadUrl(url);
         }

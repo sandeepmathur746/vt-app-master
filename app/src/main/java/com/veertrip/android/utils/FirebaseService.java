@@ -10,6 +10,9 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import androidx.core.app.NotificationCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.text.HtmlCompat;
+
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
@@ -36,13 +39,16 @@ public class FirebaseService extends FirebaseMessagingService {
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
 
             try {
-
+                int color = ContextCompat.getColor(this, R.color.colorPrimaryDark);
                 NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this, "1");
                 mBuilder.setDefaults(Notification.DEFAULT_LIGHTS | Notification.DEFAULT_SOUND);
                 mBuilder.setColor(Color.parseColor("#FF4300"));
                 mBuilder.setSmallIcon(R.drawable.app_icon);
-                mBuilder.setContentTitle(remoteMessage.getData().get("title"));
+                mBuilder.setContentTitle(""
+                        //HtmlCompat.fromHtml("<font color=\"" + color + "\">" + remoteMessage.getData().get("title") + "</font>", HtmlCompat.FROM_HTML_MODE_LEGACY)
+                );
                 mBuilder.setContentText(remoteMessage.getData().get("body"));
+
                 mBuilder.setAutoCancel(true);
 
                 String imageURL = remoteMessage.getData().get("image");

@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "918002965752-lkdn7s5ugfavk816d3q1r4pv3l4f7623.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.veertrip.android",
+            "certificate_hash": "ca2b6c49bcc7ba9de47adbc2e9c3bf76866e23dd"
+          }
+        },
+        {
           "client_id": "918002965752-8p6ddnl78raqcmou9la3r27b2a3knol4.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -33,20 +41,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "918002965752-8p6ddnl78raqcmou9la3r27b2a3knol4.apps.googleusercontent.com",
+              "client_id": "918002965752-5kjs5bej6nihqh4ku5ob4es0glt6i3h7.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }
